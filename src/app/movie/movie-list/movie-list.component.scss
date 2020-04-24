@@ -1,0 +1,35 @@
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin: 25px;
+}
+
+img{
+    max-width: width 350px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+ 
+h2{
+    font-size: 1rem;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}

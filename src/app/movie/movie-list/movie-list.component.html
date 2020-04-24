@@ -1,1 +1,13 @@
-<p>movie-list works!</p>
+<ul *ngIf="movies$ | async as movies">
+    <li *ngFor="let movie of movies.results">
+        <a [routerLink]="movie.id">
+        <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="poster">
+        <h2>{{movie.title}}</h2>
+        <h3>{{movie.releaseYear}}</h3>
+        <div>{{movie.vote_average}}</div>
+        <div>{{movie.genre_ids}}</div>
+        
+    </a>
+    </li>
+</ul>
+
